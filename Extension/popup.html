@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopSafe</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="popup-container glass">
+    <h1 class="title">ShopSafe</h1>
+
+    <div class="top-bar">
+      <p id="url-text" class="url-display">Fetching URL...</p>
+      <button id="scan-btn">Scan</button>
+    </div>
+
+    <div class="circle-container">
+      <div id="circle" class="circle pulsing">
+        <svg id="progress-ring" class="progress-ring" width="120" height="120">
+          <circle class="progress-ring__bg" cx="60" cy="60" r="54"></circle>
+          <circle class="progress-ring__circle" cx="60" cy="60" r="54"></circle>
+        </svg>
+        <div id="score-number">--%</div>
+      </div>
+    </div>
+
+    <div class="result">
+      <h2 id="result-text">Analyzing...</h2>
+      <p id="desc">Please wait while we scan this site.</p>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

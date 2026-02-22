@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "ShopSafe - Phishing Detector",
+  "version": "1.0",
+  "description": "Detect phishing, suspicious, and legitimate websites in real-time using AI.",
+  "permissions": ["activeTab", "tabs"],
+  "host_permissions": ["http://127.0.0.1:5000/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "phish.png",
+      "48": "phish.png",
+      "128": "phish.png"
+    }
+  },
+  "icons": {
+    "16": "phish.png",
+    "48": "phish.png",
+    "128": "phish.png"
+  }
+}
